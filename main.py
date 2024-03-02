@@ -30,7 +30,7 @@ from telegram import Update, ForceReply, InlineKeyboardButton, InlineKeyboardMar
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, CallbackContext, CallbackQueryHandler
 import os
 
-my_bot_token = os.environ['YOUR_BOT_TOKEN']
+my_bot_token = os.environ['6872762490:AAGhnaJ6aivLVK4AF-yFG9EE7nCRbmoVdT4']
 
 # Base de datos ficticia de libros
 libros = [{
