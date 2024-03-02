@@ -30,7 +30,7 @@ from telegram import Update, ForceReply, InlineKeyboardButton, InlineKeyboardMar
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, CallbackContext, CallbackQueryHandler
 import os
 
-my_bot_token = os.environ['6872762490:AAGhnaJ6aivLVK4AF-yFG9EE7nCRbmoVdT4']
+
 
 # Base de datos ficticia de libros
 libros = [{
@@ -418,7 +418,7 @@ def main() -> None:
   """Bot en ejecucion"""
 
   # iniciacion de la aplicacion/bot con el token de telegram.
-  application = ApplicationBuilder().token(my_bot_token).build()
+  application = ApplicationBuilder().token("6872762490:AAGhnaJ6aivLVK4AF-yFG9EE7nCRbmoVdT4").build()
 
   # Comandos del bot
   application.add_handler(CommandHandler("start", start))
