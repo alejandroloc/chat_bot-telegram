@@ -50,7 +50,7 @@ async def imprimir_datos1234(update):
   result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range='Hoja 1!F3:F13').execute()
   # Extraemos valores del resultado
   values = result.get('values',[])
-  print(values)
+ 
 
   if update.callback_query:
       await update.callback_query.answer()  # Responder al callback query
